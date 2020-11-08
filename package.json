@@ -1,0 +1,39 @@
+{
+  "name": "link-shortener-mern",
+  "version": "1.0.0",
+  "description": "The best way to create a short links and more!",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mort-gh/link-shortener-mern.git"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Roman Hnatiuk <gnatyuk.info@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mort-gh/link-shortener-mern/issues"
+  },
+  "homepage": "https://github.com/mort-gh/link-shortener-mern#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^4.1.0",
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
