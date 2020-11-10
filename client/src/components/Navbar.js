@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className='nav-wrapper yellow accent-4 black-text'>
+      <div className='nav-wrapper yellow accent-4 black-text navbar'>
         <div className='container'>
           <a href='/' className='brand-logo black-text'>
             Link shortener
