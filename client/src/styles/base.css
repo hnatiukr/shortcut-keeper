@@ -1,0 +1,46 @@
+/* navbar */
+nav {
+    margin-bottom: 100px;
+}
+
+/* focus */
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #ffd600;
+    box-shadow: 0 1px 0 0 #ffd600;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #ffd600;
+    box-shadow: 0 1px 0 0 #ffd600;
+}
+
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #ffd600;
+    box-shadow: 0 1px 0 0 #ffd600;
+}
+
+/* focus + label */
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: #ffd600;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly])+label {
+    color: #ffd600;
+}
+
+input[type=password]:not(.browser-default):focus:not([readonly])+label {
+    color: #ffd600;
+}
+
+/* focus validate + label */
+input[type=text]:not(.browser-default).validate+label {
+    color: black;
+}
+
+input[type=email]:not(.browser-default).validate+label {
+    color: black;
+}
+
+input[type=password]:not(.browser-default).validate+label {
+    color: black;
+}

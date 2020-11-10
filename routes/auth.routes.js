@@ -42,7 +42,7 @@ router.post(
       res.status(201).json({ message: 'User created successfully' });
     } catch (error) {
       res.status(500).json({
-        message: 'Registration error. Check server log',
+        message: 'Registration error',
       });
     }
   }
@@ -94,7 +94,7 @@ router.post(
       });
     } catch (error) {
       res.status(500).json({
-        message: 'Authorization error. Check server log',
+        message: 'Authorization error',
       });
     }
   }

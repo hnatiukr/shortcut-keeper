@@ -1,2 +1,11 @@
+/* libraries */
 @import '~materialize-css/dist/css/materialize.min.css';
+
+/* partials */
+@import './styles/base.css';
+
+/* components */
+@import './styles/Loader.style.css';
 @import './styles/AuthPage.style.css';
+@import './styles/CreatePage.style.css';
+@import './styles/LinkCard.css';

@@ -1,0 +1,9 @@
+.loader_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader_block {
+    width: 50%;
+}
