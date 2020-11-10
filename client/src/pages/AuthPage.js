@@ -6,6 +6,10 @@ import { AuthContext } from '../context/AuthContext';
 import { useHttp } from '../hooks/http.hook';
 import { useMessage } from '../hooks/message.hook';
 
+// icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserPlus, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+
 const AuthPage = () => {
   const auth = useContext(AuthContext);
   const message = useMessage();
@@ -46,7 +50,6 @@ const AuthPage = () => {
         <h1 className='yellow accent-4 black-text auth_h1'>Link Shortener</h1>
         <div className='card'>
           <div className='card-content white-text'>
-            <span className='card-title'>Authorization</span>
             <div>
               <div className='input-field'>
                 <input
@@ -54,6 +57,7 @@ const AuthPage = () => {
                   id='email'
                   type='email'
                   name='email'
+                  value={form.email}
                   onChange={changeHandler}
                 />
                 <label className='auth_label' htmlFor='email'>
@@ -67,6 +71,7 @@ const AuthPage = () => {
                   id='password'
                   type='password'
                   name='password'
+                  value={form.password}
                   onChange={changeHandler}
                 />
                 <label className='auth_label' htmlFor='password'>
@@ -79,15 +84,18 @@ const AuthPage = () => {
             <button
               onClick={registerHandler}
               disabled={loading}
-              className='btn  waves-effect waves-light black white-text'
+              className='btn waves-effect waves-light white black-text'
             >
+              <FontAwesomeIcon icon={faUserPlus} className='auth_icon' />
               Sign up
             </button>
+            or
             <button
               onClick={loginHandler}
               disabled={loading}
-              className='btn  waves-effect yellow accent-4 black-text'
+              className='btn waves-effect yellow accent-4 black-text'
             >
+              <FontAwesomeIcon icon={faUserCircle} className='auth_icon' />
               Sign in
             </button>
           </div>
