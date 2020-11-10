@@ -1,0 +1,29 @@
+.copy_icon{
+    margin-right: 30px;
+}
+
+.link_card {
+    margin-top: 50px;
+}
+
+.link_card_title {
+    padding-bottom: 30px;
+}
+
+.link_card_btn {
+    width: 100%;
+    text-align: left;
+    height: 50px;
+}
+
+.link_card_footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.card_link_table {
+    margin: 50px 0;
+}
